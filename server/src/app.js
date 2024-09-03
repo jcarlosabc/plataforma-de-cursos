@@ -9,6 +9,9 @@ app.set('port', port);
 
 // Importar y usar las rutas
 app.use('/', require('./routes/index.routes'));
+// app.use('/', require('./routes/index.auth'));
+app.use('/', require('./routes/index.panelAdmin'));
+
 
 app.listen(app.get('port'), () => {
     console.log("------------------");
