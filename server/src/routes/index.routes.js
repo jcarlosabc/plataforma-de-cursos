@@ -1,9 +1,7 @@
 const express = require('express');
 const router = express.Router();
+const  {getPanelHome}  =  require('../controllers/user.controller');
 
 // Ruta principal
-router.get('/',(req, res) => {
-    res.send("Bienvenido al inicio");
-});
-
+router.get('/', getPanelHome);
 module.exports = router;
